@@ -80,10 +80,6 @@ class MfrToken
      */
     protected function writeMigrationFile(string $content)
     {
-        $existingMigrations = File::glob(database_path('migrations/create_custom_table_*.php'));
-        foreach ($existingMigrations as $existingMigration) {
-            File::delete($existingMigration);
-        }
         $migrationFileName = 'mfr_tokens_' . date('Y_m_d_His') . '.php';
         $migrationFilePath = database_path('migrations/' . $migrationFileName);
         File::put($migrationFilePath, $content);
