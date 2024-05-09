@@ -1,0 +1,17 @@
+{
+    "name": "mohammadfahadrao/mfr-tokens",
+    "description": "Package to generate tables based upon response from API or by supplying key value pair manually.",
+    "autoload": {
+        "psr-4": {
+            "Mohammadfahadrao\\MfrTokens\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Fahad Rao",
+            "email": "mohammadfahad.work@gmail.com",
+            "homepage": "https://github.com/mohammadfahadrao"
+        }
+    ],
+    "require": {}
+}
