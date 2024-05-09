@@ -1,9 +1,11 @@
 <?php
 
 namespace Mohammadfahadrao\MfrTokens;
+
 use Illuminate\Support\Facades\File;
 
-class MfrToken {
+class MfrToken
+{
     /**
      * Create a migration file based on the response data.
      *
@@ -30,12 +32,8 @@ class MfrToken {
     }
     public function generateMigration(array $responseData)
     {
-        // Generate migration file content
         $migrationContent = $this->generateMigrationContent($responseData);
-
-        // Write migration file
         $migrationFileName = $this->writeMigrationFile($migrationContent);
-
         return $migrationFileName;
     }
 
@@ -82,7 +80,7 @@ class MfrToken {
      */
     protected function writeMigrationFile(string $content)
     {
-        $existingMigrations = File::glob(database_path('migrations/create_custom_table_*.php'));            
+        $existingMigrations = File::glob(database_path('migrations/create_custom_table_*.php'));
         foreach ($existingMigrations as $existingMigration) {
             File::delete($existingMigration);
         }
