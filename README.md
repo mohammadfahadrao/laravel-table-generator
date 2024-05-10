@@ -16,7 +16,7 @@ In your Controller/Trait or anywhere in Laravel Project use it:
 
 
     $mfr = new MfrToken();
-    $mfr->generateMigration(["name"=>'mfr',"age"=>21, ["categories"=>["name"=>"xyz","type":1]]]);
+    $mfr->generateMigration(["name"=>'mfr',"age"=>21, ["categories"=>["name"=>"xyz","type"=>1]]]);
     
     
 This'll create a new Migration file with those columns with prefix `mfr_tokens`. After making desired changes just migrate it
