@@ -1,5 +1,5 @@
 # Table & Migration Generator
-Package to Create Database Table from anywhere by supplying key value pairs. Saves time from running migration command and specifying columns in migration file for tables with loads of columns.
+Package to Create Migration File and  Database Table from anywhere by supplying key value pairs. Saves time from running migration command and specifying columns in migration file for tables with loads of columns.
 
 ### Installation
 To deploy this package run
