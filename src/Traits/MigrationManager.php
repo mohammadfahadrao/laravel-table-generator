@@ -1,6 +1,7 @@
 <?php
 
 namespace Mohammadfahadrao\MfrTokens\Traits;
+use Illuminate\Support\Facades\File;
 
 trait MigrationManager {
 
